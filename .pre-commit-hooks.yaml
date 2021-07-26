@@ -178,6 +178,12 @@
     entry: requirements-txt-fixer
     language: python
     files: requirements.*\.txt$
+-   id: smart-commits
+    name: "add smart commit keys to commits"
+    entry: smart-commits
+    language: python
+    pass_filenames: false
+    always_run: true
 -   id: sort-simple-yaml
     name: Sort simple YAML files
     language: python

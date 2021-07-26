@@ -169,6 +169,11 @@ the following commandline options:
 #### `requirements-txt-fixer`
 Sorts entries in requirements.txt and removes incorrect entry for `pkg-resources==0.0.0`
 
+#### `smart-commit`
+If your branch name is formatted using the standard JIRA `feature|bugfix/ISSUE-1234/description` [smart commit](https://support.atlassian.com/jira-cloud-administration/docs/enable-smart-commits/) format, this will prefix your commit messages to populate them in the matching JIRA issue. 
+For example if your branch name is `feature/APP-124/add-hamburger` and your commit 
+message is `added pickles to burger`, the message will be updated to `#APP-124 added pickles to burger` (feeding it to smart commits).
+
 #### `sort-simple-yaml`
 Sorts simple YAML files which consist only of top-level
 keys, preserving comments and blocks.
